@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define a single top-left corner that we will rotate -->
+    <g id="corner">
+      <!-- Thin border lines extending towards center -->
+      <line x1="20" y1="80" x2="20" y2="120" stroke="#D4AF37" stroke-width="1.5" />
+      <line x1="80" y1="20" x2="120" y2="20" stroke="#D4AF37" stroke-width="1.5" />
+      
+      <!-- Corner structure -->
+      <path d="M 20 80 L 20 20 L 80 20" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+      
+      <!-- Main floral swirls (intricate filigree) -->
+      <path d="M 20 20 C 40 35 45 65 25 80 C 15 85 5 70 20 60 C 35 50 30 35 20 20" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 20 20 C 35 40 65 45 80 25 C 85 15 70 5 60 20 C 50 35 35 30 20 20" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <!-- Inner detail (leaves/petals) -->
+      <path d="M 20 20 C 40 40 40 55 55 55 C 55 40 40 40 20 20" fill="#D4AF37" />
+      <circle cx="45" cy="45" r="3.5" fill="#D4AF37"/>
+      <circle cx="55" cy="65" r="2.5" fill="#D4AF37"/>
+      <circle cx="65" cy="55" r="2.5" fill="#D4AF37"/>
+      
+      <!-- Outer elegant flourish loops -->
+      <path d="M 20 50 C 0 55 0 70 15 75" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 50 20 C 55 0 70 0 75 15" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
+      
+      <!-- Corner fleur/point -->
+      <path d="M 20 20 L 12 8 C 16 8 20 15 20 15 C 20 15 24 8 28 8 Z" fill="#D4AF37"/>
+      
+      <!-- Extra royal details -->
+      <path d="M 35 60 L 30 65 L 35 70 L 40 65 Z" fill="#D4AF37"/>
+      <path d="M 60 35 L 65 30 L 70 35 L 65 40 Z" fill="#D4AF37"/>
+    </g>
+  </defs>
+
+  <!-- Place the four corners to construct the 9-slice frame -->
+  <use href="#corner" x="0" y="0" />
+  <use href="#corner" x="0" y="0" transform="translate(240, 0) scale(-1, 1)" />
+  <use href="#corner" x="0" y="0" transform="translate(0, 240) scale(1, -1)" />
+  <use href="#corner" x="0" y="0" transform="translate(240, 240) scale(-1, -1)" />
+</svg>

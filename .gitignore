@@ -1,0 +1,9 @@
+# Claude Code agent scaffolding
+.agents/
+skills-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

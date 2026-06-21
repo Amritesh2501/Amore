@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amore Italian Bistro Proposal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- Hero / Cover Section -->
+    <div class="hero-section" id="heroSection">
+      <img src="assets/venue-cover.jpg"
+        onerror="this.onerror=null; this.src='https://picsum.photos/seed/amorecover/1920/1200';"
+        class="cover-img cover-bw" alt="Cover B&W">
+      <img src="assets/venue-cover.jpg"
+        onerror="this.onerror=null; this.src='https://picsum.photos/seed/amorecover/1920/1200';"
+        class="cover-img cover-color lens" alt="Cover Color">
+      <div class="cover-content">
+        <h1>AMORE</h1>
+        <h2>More Than An Italian Restaurant.</h2>
+        <p>A Place Where Every Table Tells A Love Story.</p>
+        <p class="presented-by">Presented by Shawty On Duty Hospitality Group</p>
+        <div class="action-buttons">
+          <button id="openBtn" class="btn btn-primary btn-lg">
+            <span>Open Proposal</span>
+            <span class="btn-icon" aria-hidden="true">→</span>
+          </button>
+          <button id="openMenuBtn" class="btn btn-primary btn-lg">
+            <span>Open Proposed Menu</span>
+            <span class="btn-icon" aria-hidden="true">→</span>
+          </button>
+        </div>
+        <span class="scroll-hint">Tap to open the book</span>
+      </div>
+    </div>
+
+    <!-- Menu Book Section (Proposal) -->
+    <div class="book-section active" id="bookSection">
+      <button id="backBtn" class="btn btn-ghost back-btn" aria-label="Back to cover">
+        <span class="back-arrow" aria-hidden="true">←</span>
+        <span>Back to Cover</span>
+      </button>
+
+      <div class="controls" id="bookControls">
+        <button id="prevBtn" class="btn btn-ghost" disabled>
+          <span class="ctrl-arrow" aria-hidden="true">←</span>
+          <span>Previous</span>
+        </button>
+        <button id="nextBtn" class="btn btn-primary">
+          <span>Next</span>
+          <span class="ctrl-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <div class="book-wrapper">
+        <div id="amoreMenu">
+
+          <!-- Front Cover (Right Side) -->
+          <div class="my-page hard menu-cover-front">
+            <div class="cover-overlay"></div>
+            <div class="menu-cover-content">
+              <span class="cover-eyebrow">Shawty On Duty Hospitality</span>
+              <div class="cover-rule"></div>
+              <h1>AMORE</h1>
+              <p class="cover-sub">Italian Bistro</p>
+              <span class="cover-tag">Proposal</span>
+            </div>
+          </div>
+
+          <!-- Spread 1 -->
+          <!-- Left (Image) -->
+          <div class="my-page">
+            <div class="photo-side">
+              <img src="assets/first-page.jpg"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/waterfront/800/1200';"
+                alt="Amore Entrance">
+            </div>
+          </div>
+          <!-- Right (Image) -->
+          <div class="my-page">
+            <div class="photo-side">
+              <img src="assets/First-page-right-side.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/firstpageright/800/1200';"
+                alt="First Page Right Side">
+            </div>
+          </div>
+
+          <!-- Spread 2 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/second-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/secondpageleft/800/1200';"
+                alt="Second Page Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/second-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/secondpageright/800/1200';"
+                alt="Second Page Right">
+            </div>
+          </div>
+
+          <!-- Spread 3 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/third-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/thirdpageleft/800/1200';"
+                alt="Third Page Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/third-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/thirdpageright/800/1200';"
+                alt="Third Page Right">
+            </div>
+          </div>
+
+          <!-- Spread 4 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/fourth-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/fourthpageleft/800/1200';"
+                alt="Fourth Page Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/fourth-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/fourthpageright/800/1200';"
+                alt="Fourth Page Right">
+            </div>
+          </div>
+
+          <!-- Spread 5 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/fifth-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/fifthpageleft/800/1200';"
+                alt="Fifth Page Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/fifth-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/fifthpageright/800/1200';"
+                alt="Fifth Page Right">
+            </div>
+          </div>
+
+          <!-- Spread 6 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/sixth-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/sixthpageleft/800/1200';"
+                alt="Sixth Page Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/sixth-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/sixthpageright/800/1200';"
+                alt="Sixth Page Right">
+            </div>
+          </div>
+
+          <!-- Spread 7 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/seventh-left-page.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/seventhpageleft/800/1200';"
+                alt="Seventh Page Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/seventh-right-page.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/seventhpageright/800/1200';"
+                alt="Seventh Page Right">
+            </div>
+          </div>
+
+          <!-- Spread 8 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/eight-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/eightpageleft/800/1200';"
+                alt="Eighth Page Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/eight-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/eightpageright/800/1200';"
+                alt="Eighth Page Right">
+            </div>
+          </div>
+
+          <!-- OTHER SPREADS COMMENTED OUT 
+          <div class="my-page">
+            <div class="photo-side">
+              <img src="assets/exp-sunset.jpg"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/expsunset/800/1200';" alt="Sunset">
+            </div>
+          </div>
+          <div class="my-page">
+            <div class="text-side">
+              <h2>The Lakeside Experience</h2>
+              <p>Mirror Park isn't just our address.</p>
+              <p>It's our atmosphere.</p>
+              <p class="lavender-text fw-bold">Imagine...</p>
+              <p>Watching the sunset.</p>
+              <p>Soft piano music.</p>
+              <p>Fresh Italian food.</p>
+              <p>A candle-lit table.</p>
+              <h3>That's Amore.</h3>
+            </div>
+          </div>
+
+          <div class="my-page">
+            <div class="photo-side">
+              <img src="assets/exp-piano.jpg"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/exppiano/800/1200';"
+                alt="Piano Events">
+            </div>
+          </div>
+          <div class="my-page">
+            <div class="text-side">
+              <h2>Events That Bring The Community Together</h2>
+              <div class="events-grid">
+                <span class="event-tag">Prom Night</span>
+                <span class="event-tag">Wine Tasting</span>
+                <span class="event-tag">Acoustic Evenings</span>
+                <span class="event-tag">Proposal Packages</span>
+                <span class="event-tag">Birthday Celebrations</span>
+                <span class="event-tag">Live Piano Nights</span>
+                <span class="event-tag">Family Sundays</span>
+                <span class="event-tag">Couple's Dinner</span>
+                <span class="event-tag">Wine & Paint</span>
+                <span class="event-tag">Italian Movie Nights</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-page">
+            <div class="photo-side">
+              <img src="assets/exp-waterfront.jpg"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/expwaterfront/800/1200';"
+                alt="Waterfront">
+            </div>
+          </div>
+          <div class="my-page">
+            <div class="text-side">
+              <h2>Powered By Shawty On Duty</h2>
+              <ul class="expertise-list">
+                <li>Food Delivery</li>
+                <li>Professional Staff</li>
+                <li>Event Management</li>
+                <li>Customer Service</li>
+                <li>Marketing</li>
+                <li>Community Engagement</li>
+                <li>Reliable Operations</li>
+              </ul>
+              <div class="speaker-notes">
+                <p>"Amore isn't starting from zero. It's standing on the shoulders of everything we've already built."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-page">
+            <div class="photo-side">
+              <img src="assets/exp-family.jpg"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/family/800/1200';" alt="Family">
+            </div>
+          </div>
+          <div class="my-page">
+            <div class="text-side">
+              <h2>Our Promise</h2>
+              <p>We promise...</p>
+              <ul class="elegant-list">
+                <li>Fresh food.</li>
+                <li>Warm smiles.</li>
+                <li>Consistent quality.</li>
+                <li>Memorable evenings.</li>
+                <li class="lavender-text">A reason to come back.</li>
+              </ul>
+            </div>
+          </div>
+          -->
+
+          <!-- Back Cover Inside (Left Side) -->
+          <div class="my-page hard menu-cover-back-inside">
+            <!-- Blank inside back cover -->
+          </div>
+
+          <!-- Back Cover (Right Side -> will fold to left) -->
+          <div class="my-page hard menu-cover-back">
+            <div class="cover-overlay"></div>
+            <div class="menu-cover-content">
+              <span class="cover-eyebrow">With Love,</span>
+              <div class="cover-rule"></div>
+              <h1>AMORE</h1>
+              <h2 class="lavender-text cover-thanks">Thank You.</h2>
+              <span class="cover-tag">Shawty On Duty Hospitality Group</span>
+              <p style="font-size: 0.8rem; margin-top: 3rem; opacity: 0.6; font-family: 'Inter', sans-serif; letter-spacing: 0.5px;">Designed and Developed by Richard Miller, Era Istrefi and Kiara Faust</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Menu Book Section -->
+    <div class="book-section" id="foodMenuSection">
+      <button id="backBtnMenu" class="btn btn-ghost back-btn" aria-label="Back to cover">
+        <span class="back-arrow" aria-hidden="true">←</span>
+        <span>Back to Cover</span>
+      </button>
+
+      <div class="controls" id="foodMenuControls">
+        <button id="prevBtnMenu" class="btn btn-ghost" disabled>
+          <span class="ctrl-arrow" aria-hidden="true">←</span>
+          <span>Previous</span>
+        </button>
+        <button id="nextBtnMenu" class="btn btn-primary">
+          <span>Next</span>
+          <span class="ctrl-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <div class="book-wrapper">
+        <div id="amoreFoodMenu">
+
+          <!-- Front Cover (Right Side) -->
+          <div class="my-page hard menu-cover-front">
+            <div class="cover-overlay"></div>
+            <div class="menu-cover-content">
+              <span class="cover-eyebrow">Shawty On Duty Hospitality</span>
+              <div class="cover-rule"></div>
+              <h1>AMORE</h1>
+              <p class="cover-sub">Il Menù</p>
+            </div>
+          </div>
+
+          <!-- Spread 1 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-first-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage1l/800/1200';"
+                alt="Menu Page 1 Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-first-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage1r/800/1200';"
+                alt="Menu Page 1 Right">
+            </div>
+          </div>
+
+          <!-- Spread 2 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-second-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage2l/800/1200';"
+                alt="Menu Page 2 Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-second-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage2r/800/1200';"
+                alt="Menu Page 2 Right">
+            </div>
+          </div>
+
+          <!-- Spread 3 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-third-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage3l/800/1200';"
+                alt="Menu Page 3 Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-third-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage3r/800/1200';"
+                alt="Menu Page 3 Right">
+            </div>
+          </div>
+
+          <!-- Spread 4 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-fourth-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage4l/800/1200';"
+                alt="Menu Page 4 Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-fourth-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage4r/800/1200';"
+                alt="Menu Page 4 Right">
+            </div>
+          </div>
+
+          <!-- Spread 5 -->
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-fifth-page-left.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage5l/800/1200';"
+                alt="Menu Page 5 Left">
+            </div>
+          </div>
+          <div class="my-page no-border">
+            <div class="photo-side">
+              <img src="assets/menu-fifth-page-right.png"
+                onerror="this.onerror=null; this.src='https://picsum.photos/seed/menupage5r/800/1200';"
+                alt="Menu Page 5 Right">
+            </div>
+          </div>
+
+          <!-- Back Cover Inside (Left Side) -->
+          <div class="my-page hard menu-cover-back-inside">
+          </div>
+
+          <!-- Back Cover (Right Side) -->
+          <div class="my-page hard menu-cover-back">
+            <div class="cover-overlay"></div>
+            <div class="menu-cover-content">
+              <span class="cover-eyebrow">Buon Appetito</span>
+              <div class="cover-rule"></div>
+              <h1>AMORE</h1>
+              <p style="font-size: 0.8rem; margin-top: 3rem; opacity: 0.6; font-family: 'Inter', sans-serif; letter-spacing: 0.5px;">Designed and Developed by Richard Miller, Era Istrefi and Kiara Faust</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
